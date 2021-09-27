@@ -14,15 +14,15 @@ public class BasicCalculator {
     }
 
     public Long subtract (Long number1, Long number2) {
-        logger.info( "subtracting {} + {}", number1, number2 );
+        logger.info( "subtracting {} - {}", number1, number2 );
         return number1 - number2;
     }
     public Long multiply(Long number1, Long number2) {
-        logger.info( "multiplying {} + {}", number1, number2 );
+        logger.info( "multiplying {} x {}", number1, number2 );
         return number1 * number2;
     }
     public Long divide(Long number1, Long number2) {
-        logger.info( "dividing {} + {}", number1, number2 );
+        logger.info( "dividing {} / {}", number1, number2 );
         if (number2.equals(0L))
             throw new IllegalArgumentException("No se puede dividir por cero");
         else
